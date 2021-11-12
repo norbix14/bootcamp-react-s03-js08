@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const ej03 = (arr = [1,2,3,4,5,6,7,8,9,10]) => arr.filter(el => el % 2 === 0)
 	const ej04 = (pets = ['cat','dog','elephant','hawk','snake','cat']) => pets.filter(pet => pet !== 'cat')
 	const ej05 = (products = []) => {
-		const productos = products.length > 0 || [
+		const productos = (products.length > 0 && products) || [
 	  	{id: 2, nombre: 'Remera muy fachera', precio: 250},
 	  	{id: 5, nombre: 'Pantalon muy fachero', precio: 400},
 	    {id: 6, nombre: 'Camperon invierno', precio: 699},
